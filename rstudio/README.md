@@ -1,8 +1,13 @@
 # Using the rocker/rstudio container
 
+## To build the image with imdb data loaded from https://www.kaggle.com/tmdb/tmdb-movie-metadata
+```
+./build.sh
+```
+
 ## Quickstart
 
-    docker run -d -p 8787:8787 rocker/rstudio
+    docker run -d -p 8787:8787 rocker/rstudio:imdb
 
 Visit `localhost:8787` in your browser and log in with username:password as `rstudio:rstudio`.
 
